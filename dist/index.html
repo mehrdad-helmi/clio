@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f3eb">
+<meta name="description" content="Explore European history from Archaic Greece through World War II in Clio’s interactive map, timeline, stories, and index.">
+<title>Clio — European History Atlas</title>
+<link rel="icon" href="./assets/clio-mark.webp">
+<link rel="stylesheet" href="./styles.css">
+<script type="module" src="./app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="top-inner">
+    <a class="brand" href="#atlas" aria-label="Clio home"><img src="./assets/clio-mark.webp" width="41" height="41" alt=""><span><strong>Clio</strong><small>European History Atlas</small></span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#atlas" data-nav="atlas">Atlas</a><a href="#stories" data-nav="stories">Stories</a><a href="#index" data-nav="index">Index</a><a href="#graph" data-nav="graph">Connections</a>
+    </nav>
+    <button id="open-search" class="search-button" type="button" aria-label="Search the atlas"><span data-icon="search"></span><span class="search-label">Search the atlas</span><kbd>/</kbd></button>
+  </div>
+</header>
+<main id="main" tabindex="-1"><p class="loading">Opening the atlas…</p></main>
+<footer class="footer"><div><span class="footer-brand">Clio</span><span>700 BCE to 1945 CE</span></div><a href="#sources">Sources &amp; map notes <span aria-hidden="true">↗</span></a></footer>
+<dialog id="search-dialog" aria-label="Search the atlas">
+  <div class="dialog-input"><span data-icon="search"></span><input id="search-input" type="search" placeholder="Search people, places, wars…" aria-label="Search records" autocomplete="off"><button id="close-search" class="icon-button" type="button" aria-label="Close search"><span data-icon="close"></span></button></div>
+  <div id="search-results" class="dialog-results"></div>
+</dialog>
+<noscript><p class="loading">Clio uses JavaScript to draw the map and connect historical records.</p></noscript>
+</body>
+</html>
